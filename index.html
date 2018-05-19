@@ -4,39 +4,8 @@
 		<meta charset="utf-8">
 		<title>NauJS • TodoMVC</title>
 		<link rel="stylesheet" href="css/main.css">
-		<script>
-			//constant
-			var ENTER_KEY = 13;
-			var ESCAPE_KEY = 27;
-			function create(e){
-				console.log('create()');
-				var $input = $(e.target);
-				var val = $input.val().trim();
+		<!-- jQuery & RequireJS need to be downloaded separately -->
 
-				if(e.which !== ENTER_KEY || !val){
-					return;
-				}
-
-				var todoItem = {
-					id : (new Date()).getTime(),
-					title : val,
-					complete: false
-				};
-
-				$input.val('');
-
-				var html = '\
-					<li class="" data-id="'+todoItem.id+'">\
-						<div class="view">\
-							<input class="toggle" type="checkbox" {{#if complete}}checked{{/if}}>\
-							<label>'+todoItem.title+'</label>\
-							<button class="destroy" onclick="destroy(event);"></button>\
-						</div>\
-						<input class="edit" value="'+todoItem.title+'">\
-					</li>';
-				$("#todo-list").append(html);
-			}
-		</script>
 	</head>
 	<body>
 		<section id="todoapp">
@@ -68,11 +37,8 @@
 		<footer id="info">
 			<p><a href="#">Learn new things.</a></p>
 		</footer>
-		<!-- jQuery & RequireJS need to be downloaded separately -->
 		<script src="js/lib/jquery.js"></script>
-		<!-- <script src="js/lib/require.js" data-main="js/app.js"></script> -->
-		<script>
-			console.log('here');
-		</script>
+		<script src="js/app.js"></script>
+
 	</body>
 </html>
