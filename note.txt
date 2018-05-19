@@ -1,0 +1,18 @@
+Tien hoa 1:
++ js noi tuyen.
++ event noi tuyen.
+=> chay muot, ok but ...
+
+Tiet hoa 2:
++ khac phuc 1
+- Tao file xu ly rieng
+- Viet lai xu kien trong file js
+- file js de o cuoi.
+
++ Nhuoc diem:
+bien, ham : global
+
+Tien hoa 3:
+closure (dong goi), namspace
+
+iife ?
